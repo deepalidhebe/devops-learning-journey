@@ -31,6 +31,10 @@ It consolidates my notes from a 3‑day foundational series.
 ---
 
 ## 📍 Day 3 — Organizational Roles & Jira
+
+## 📊 DevOps Workflow Visualization
+![DevOps Workflow](workflow.png)
+
 - **Requirement Flow**:  
   Customer → Business Analyst (BRD) → Product Manager → Product Owner (Epics/Stories) → Solution Architect (HLD/LLD) → Developers → DevOps Engineers.
 - **Scrum Teams**: Developers, DevOps, QA, DBAs, SREs, Technical Writers.
