@@ -1,3 +1,9 @@
+![Docker](https://img.shields.io/badge/Docker-blue?logo=docker&logoColor=white)
+![Jenkins](https://img.shields.io/badge/Jenkins-red?logo=jenkins&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-orange?logo=amazonaws&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-blue?logo=kubernetes&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-black?logo=github&logoColor=white)
+
 # DevOps Zero to Hero — Learning Journey
 
 This repository documents my structured learning path through DevOps concepts, tools, and practices.  
