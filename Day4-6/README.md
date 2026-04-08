@@ -92,3 +92,50 @@ Manual creation is inefficient for scale. DevOps focuses on **efficiency through
 - Terraform shines in these setups due to its **provider-agnostic** nature.
 
 ---
+Here’s a clean summary of your **Day 6 transcript** (connecting to EC2 from Windows using MobaXterm), so you can add it to your GitHub repo or share on LinkedIn:
+
+---
+
+## 📘 Day 6 Notes – Connecting to EC2 from Windows (MobaXterm)
+
+### 🔑 Problem
+- Many Windows users struggle to connect to AWS EC2 instances.  
+- Common issues: confusion with **PuTTY**, `.ppk` file conversion, or reliance on AWS browser terminal.
+
+---
+
+### 🧑‍💻 Solution: Use **MobaXterm**
+A simpler and more user‑friendly alternative to PuTTY.
+
+#### Steps:
+1. **Launch EC2 Instance**
+   - Choose Ubuntu (e.g., `t2.micro`, free tier).
+   - Create a **key pair** (`.pem` file) → download it locally.
+   - Ensure **Public IP** and **SSH (port 22)** are enabled.
+
+2. **Install MobaXterm**
+   - Download **Community Edition (Installer)** from official site.
+   - Extract and install → open MobaXterm.
+
+3. **Configure SSH Session**
+   - Go to **Sessions → SSH**.
+   - Enter **Host name** = EC2 Public IP.
+   - **Username** = `ubuntu`.
+   - Under **Advanced SSH settings**, select **Use private key** → choose your `.pem` file.
+
+4. **Connect**
+   - Accept the pop‑up → you’re inside the EC2 instance.
+   - Verify with commands like:
+     ```bash
+     sudo apt update
+     ```
+
+---
+
+### ⚡ Key Takeaways
+- **MobaXterm** is easier than PuTTY for Windows users.  
+- No need to convert `.pem` to `.ppk`.  
+- Provides a clean interface for SSH, SFTP, and terminal access.  
+- Great option for beginners learning AWS + DevOps on Windows.
+
+---
