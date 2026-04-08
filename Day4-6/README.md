@@ -43,8 +43,6 @@ Thanks for confirming — this transcript is indeed your **Day 5 notes** from th
   - **Azure (Microsoft)** → Virtual Machines  
   - **On-Premise** → Manual VM creation on physical servers
 
----
-
 ### 🧑‍💻 Manual VM Creation via UI
 - **AWS Console:**  
   - Login → EC2 → Launch Instance  
@@ -56,8 +54,6 @@ Thanks for confirming — this transcript is indeed your **Day 5 notes** from th
 - **Azure Portal:**  
   - Similar flow: Login → Virtual Machines → Create  
   - Azure returns IP + credentials for access
-
----
 
 ### ⚙️ Automation in DevOps
 Manual creation is inefficient for scale. DevOps focuses on **efficiency through automation**.
@@ -72,8 +68,6 @@ Manual creation is inefficient for scale. DevOps focuses on **efficiency through
 | **AWS CDK** | Code-based infrastructure using familiar languages |
 | **Terraform** | Multi-cloud automation tool (supports AWS, Azure, GCP) |
 
----
-
 ### 🧠 Interview Insights
 - If asked how you automate infrastructure:
   - Mention **Terraform** for multi-cloud setups.
@@ -81,8 +75,6 @@ Manual creation is inefficient for scale. DevOps focuses on **efficiency through
 - Choose tools based on **organization strategy**:
   - AWS-focused → CDK or CFT preferred.
   - Hybrid cloud → Terraform is ideal.
-
----
 
 ### 🌐 Hybrid Cloud Strategy
 - Organizations use **multiple cloud platforms** for different workloads:
@@ -92,17 +84,12 @@ Manual creation is inefficient for scale. DevOps focuses on **efficiency through
 - Terraform shines in these setups due to its **provider-agnostic** nature.
 
 ---
-Here’s a clean summary of your **Day 6 transcript** (connecting to EC2 from Windows using MobaXterm), so you can add it to your GitHub repo or share on LinkedIn:
-
----
 
 ## 📘 Day 6 Notes – Connecting to EC2 from Windows (MobaXterm)
 
 ### 🔑 Problem
 - Many Windows users struggle to connect to AWS EC2 instances.  
 - Common issues: confusion with **PuTTY**, `.ppk` file conversion, or reliance on AWS browser terminal.
-
----
 
 ### 🧑‍💻 Solution: Use **MobaXterm**
 A simpler and more user‑friendly alternative to PuTTY.
@@ -129,8 +116,6 @@ A simpler and more user‑friendly alternative to PuTTY.
      ```bash
      sudo apt update
      ```
-
----
 
 ### ⚡ Key Takeaways
 - **MobaXterm** is easier than PuTTY for Windows users.  
