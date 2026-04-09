@@ -1,7 +1,7 @@
 # Day 7 – AWS CLI & EC2 Automation
 
 ## 📌 Overview
-In this session, we explored efficient ways to create and manage AWS EC2 instances using automation tools. Instead of relying solely on the AWS Management Console (UI), we learned how DevOps engineers can leverage **AWS CLI, CloudFormation, and Python boto3** for faster, repeatable workflows.
+In this session, I explored efficient ways to create and manage AWS EC2 instances using automation tools. Instead of relying solely on the AWS Management Console (UI), we learned how DevOps engineers can leverage **AWS CLI, CloudFormation, and Python boto3** for faster, repeatable workflows.
 
 ---
 
@@ -26,8 +26,8 @@ In this session, we explored efficient ways to create and manage AWS EC2 instanc
   - Configure credentials: `aws configure` (Access Key, Secret Key, Region, Output format).  
   - Example commands:  
     - List S3 buckets → `aws s3 ls`  
-    - Create bucket → `aws s3 mb <bucket-name>`  
-    - Launch EC2 instance → `aws ec2 run-instances ...`
+    - Create bucket → `aws s3api create-bucket --bucket deepali-devops-bucket --region ap-south-1 --create-bucket-configuration LocationConstraint=ap-south-1`  
+    - Launch EC2 instance → `ssh -i "key_name" user@ip_address`
 
 - **CloudFormation Templates**
   - Infrastructure as Code (IaC) introduction.  
@@ -61,8 +61,12 @@ In this session, we explored efficient ways to create and manage AWS EC2 instanc
 ---
 
 ## ✅ Takeaway
-By the end of Day 7, you should be comfortable:
+By the end of Day 7, I am comfortable with:
 - Logging into EC2 via both UI and terminal.  
 - Installing and configuring AWS CLI.  
 - Automating AWS tasks with CLI, CloudFormation, and boto3.  
 - Understanding why automation is essential for scaling DevOps workflows.
+
+---
+
+## Special Thanks to Abhishek Veermalla
