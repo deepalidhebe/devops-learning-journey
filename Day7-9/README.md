@@ -59,6 +59,6 @@ By the end of Day 7, I am comfortable with:
 - Automating AWS tasks with CLI, CloudFormation, and boto3.  
 - Understanding why automation is essential for scaling DevOps workflows.
 
-## Special Thanks to Abhishek Veermalla
+## Special Thanks to Abhishek Veeramalla
 
 ---
