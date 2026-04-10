@@ -37,16 +37,6 @@ In this session, I explored efficient ways to create and manage AWS EC2 instance
   - Example: List running EC2 instances with a simple Python script.  
   - Documentation provides ready-to-use examples for automation.
 
-## 📝 Assignment
-1. Install AWS CLI on your system.  
-2. Generate **Access Key + Secret Key** from AWS IAM → Security Credentials.  
-3. Configure CLI with `aws configure`.  
-4. Perform at least one automation task:  
-   - List/create S3 buckets  
-   - Launch EC2 instance  
-   - Or any other AWS resource using CLI commands.  
-5. Explore CloudFormation templates and boto3 scripts for deeper automation.
-
 ## 📚 References
 - [AWS CLI Documentation](https://docs.aws.amazon.com/cli/)  
 - [AWS CloudFormation Templates – GitHub](https://github.com/awslabs/aws-cloudformation-templates)  
@@ -61,7 +51,8 @@ By the end of Day 7, I am comfortable with:
 
 ---
 
-### 📓 Day 8 – Linux & Shell Scripting Basics  
+# 📓 Day 8 – Linux & Shell Scripting Basics  
+
 Today’s focus was on understanding the **Linux operating system** and the **fundamentals of shell scripting**.  
 
 **Key takeaways:**  
