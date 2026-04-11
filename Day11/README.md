@@ -1,4 +1,4 @@
-# AWS Resource Tracker (Day 11)
+# 🚀 Day 11 - AWS Resource Tracker
 
 ## 📌 Overview
 This project demonstrates how to use **Shell Scripting + AWS CLI** to automate daily reporting of AWS resource usage.  
