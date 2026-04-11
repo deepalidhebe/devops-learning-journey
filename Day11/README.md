@@ -73,9 +73,3 @@ Add:
 ```
 0 9 * * * /home/ubuntu/deepali/aws_resource_tracker.sh
 ```
-
----
-
-This README makes your repo look **professional and recruiter‑ready**.  
-
-👉 Do you want me to also draft a **LinkedIn carousel caption** (short, visual‑friendly points) so you can share this project as a Day 11 milestone post?
