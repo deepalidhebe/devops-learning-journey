@@ -86,4 +86,54 @@ chmod +x first_script.sh
 
 - Shell scripting is the backbone of DevOps automation.  
 - Day 9 focused on **file operations, editing, shebang usage, and execution basics** — the foundation for writing scalable automation scripts.
+
 ---
+
+# 📘 Day 10 – Advanced Shell Scripting Notes
+
+## 🔑 Recap from Part‑1
+- Wrote simple shell scripts to create files/folders.  
+- Learned node health commands:  
+  - `df` → disk usage  
+  - `free` → memory usage  
+  - `nproc` → CPU count  
+  - `top` → running processes  
+
+## 🛠 Node Health Script (`node_health.sh`)
+Purpose: Automate health checks for EC2/VM nodes.
+
+### Good Practices
+- Always start with **shebang** (`#!/bin/bash`).  
+- Add **metadata**: author, date, version, purpose.  
+- Use **structured comments** for clarity.  
+
+### Commands Used
+```bash
+df -h        # Disk space
+free -g      # Memory usage
+nproc        # CPU count
+ps -ef       # List processes
+```
+
+## 📊 Improving Readability
+- **Echo statements** → label outputs clearly.  
+- **Debug mode (`set -x`)** → shows command + output.  
+
+## ⚙️ Process Management
+- `ps -ef` → list all processes.  
+- `grep <keyword>` → filter specific processes.  
+- `| (pipe)` → pass output of one command to another.  
+- **Interview Q:** Why `date | echo` fails → `date` sends output to `stdin`, not `stdout`.
+
+## 🎯 Extracting Process IDs
+- Use `awk` to print specific columns:  
+```bash
+ps -ef | grep Amazon | awk '{print $2}'
+```
+→ Prints only the **PIDs** of Amazon processes.  
+
+## ✅ Key Takeaways
+1. Always document scripts with metadata.  
+2. Use `set -x` for debugging.  
+3. Combine `ps`, `grep`, `pipe`, and `awk` for process analysis.  
+4. Automate node health checks for faster troubleshooting.  
