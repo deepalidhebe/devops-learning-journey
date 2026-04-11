@@ -1,4 +1,4 @@
-# Day 9 – Shell Scripting Basics (Zero to Hero)
+# 📘 Day 9 – Shell Scripting Basics (Zero to Hero)
 
 ## 📌 Purpose of Scripting & Automation
 - Reduce repetitive manual tasks.
@@ -89,7 +89,7 @@ chmod +x first_script.sh
 
 ---
 
-# 📘 Day 10 – Advanced Shell Scripting Notes
+# 📘 Day 10 – Advanced Shell Scripting
 
 ## 🔑 Recap from Part‑1
 - Wrote simple shell scripts to create files/folders.  
