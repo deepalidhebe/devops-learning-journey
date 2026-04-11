@@ -1,0 +1,98 @@
+PWD (Present Working Directory)
+------------------------------------------------------------------------------
+CD (Change Directory)
+------------------------------------------------------------------------------
+LS (List)
+------------------------------------------------------------------------------
+TOUCH command -- crates a file
+------------------------------------------------------------------------------
+VI (Visual Editor) -- create and write content into the file
+------------------------------------------------------------------------------
+CAT/LESS command -- to open the file
+------------------------------------------------------------------------------
+MKDIR (Make Directory)
+------------------------------------------------------------------------------
+RMDIR (Remove Directory)
+------------------------------------------------------------------------------
+RM command -- remove the file
+------------------------------------------------------------------------------
+NPROC command -- print the number of processing units available
+------------------------------------------------------------------------------
+DF command -- displays the amount of space available on the file system 
+	      containing each file name argument
+
+df -k
+	like --block-size=1K
+df -h
+	--human-readable
+        print sizes in powers of 1024 (e.g., 1023M)
+------------------------------------------------------------------------------
+FREE command -- display amount of free and used memory in the system
+
+free -b
+	Display the amount of memory in bytes.
+
+free -k
+	Display the amount of memory in kibibytes. This is the default.
+
+free -m
+	Display the amount of memory in mebibytes.
+
+free -g
+	Display the amount of memory in gibibytes.
+------------------------------------------------------------------------------
+TOP Command -- display Linux processes
+
+top -n 1 -b | head -15
+	-n 1 runs top for one iteration.
+	-b runs it in batch mode (so it prints to stdout).
+	head -15 shows the first 15 lines (header + ~5 processes).
+
+top -b -n 1 | sed -n '8,12p'    
+	This prints lines 8–12, which correspond to the first 5 processes
+
+ps -eo pid,comm,%cpu,%mem --sort=-%cpu | head -6
+	This shows the top 5 CPU-consuming processes (plus the header)
+------------------------------------------------------------------------------
+CHMOD command -- change file mode bits
+------------------------------------------------------------------------------
+HISTORY command -- displays history of your commands entered
+------------------------------------------------------------------------------
+MAN command -- an interface to the system reference manuals
+------------------------------------------------------------------------------
+set -x -- to print the output in debug mode
+------------------------------------------------------------------------------
+PS command -- displays information about a selection of the active processes.
+
+       To see every process on the system using standard syntax:
+          ps -e
+          ps -ef
+          ps -eF
+          ps -ely
+
+       To see every process on the system using BSD syntax:
+          ps ax
+          ps axu
+------------------------------------------------------------------------------
+GREP command -- searches  for  PATTERNS  in each FILE
+	
+	ps -ef | grep amazon
+------------------------------------------------------------------------------
+AWK command -- pattern scanning and processing language
+	
+	ps -ef | grep amazon | awk -F" " '{print $2}'
+	this will display the process ID of amazon processes
+------------------------------------------------------------------------------
+CURL command -- retrieves information from the internet
+------------------------------------------------------------------------------
+WGET command -- free utility for non-interactive download of files from the Web
+------------------------------------------------------------------------------
+FIND command -- search for files in a directory hierarchy
+	sudo find / -name pam
+------------------------------------------------------------------------------
+SUDO (Substitute User Do) -- run command in behalf of super user (root user)
+	sudo su -
+------------------------------------------------------------------------------
+SU (switch user)
+------------------------------------------------------------------------------
+TRAP command -- traping signals
