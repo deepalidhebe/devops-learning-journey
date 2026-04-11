@@ -15,7 +15,7 @@ set -x
 #AWS Lambda
 #AWS IAM Users
 
-rm resourceTracker
+#rm resourceTracker
 
 echo "AWS Resource Report - $(date)" > resourceTracker
 
