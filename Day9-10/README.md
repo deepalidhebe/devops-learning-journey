@@ -136,4 +136,6 @@ ps -ef | grep Amazon | awk '{print $2}'
 1. Always document scripts with metadata.  
 2. Use `set -x` for debugging.  
 3. Combine `ps`, `grep`, `pipe`, and `awk` for process analysis.  
-4. Automate node health checks for faster troubleshooting.  
+4. Automate node health checks for faster troubleshooting.
+
+![Shell Scripting Short Notes](assets/day9-10-shortnotes.png)
