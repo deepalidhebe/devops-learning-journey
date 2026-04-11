@@ -138,4 +138,4 @@ ps -ef | grep Amazon | awk '{print $2}'
 3. Combine `ps`, `grep`, `pipe`, and `awk` for process analysis.  
 4. Automate node health checks for faster troubleshooting.
 
-![Shell Scripting Short Notes](assets/day9-10-shortnotes.png)
+![Shell Scripting Short Notes](Day9-10.png)
