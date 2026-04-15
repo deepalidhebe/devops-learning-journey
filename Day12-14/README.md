@@ -1,5 +1,6 @@
-# 📘 DevOps Learning Journey — Day 12
-**Topic:** Git & GitHub — Why Version Control Matters
+# 📘 DevOps Learning Journey - Day 12
+
+**Topic:** Git & GitHub - Why Version Control Matters
 
 ## 🎯 Key Concepts Learned
 
