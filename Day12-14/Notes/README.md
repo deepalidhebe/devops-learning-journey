@@ -1,6 +1,6 @@
 # 💡 The Day I Realized Why Git Exists
 
-![devops-learning-journey/Day12-14/Notes/IMG_7633.jpg]
+![From Chaos to Collaboration](devops-learning-journey/Day12-14/Notes/IMG_7633.jpg)
 
 ## 📖 Story
 Imagine this:  
