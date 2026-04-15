@@ -1,6 +1,4 @@
-# 📘 DevOps Learning Journey - Day 12
-
-**Topic:** Git & GitHub - Why Version Control Matters
+# 📘 DevOps Learning Journey - Day 12 : Git & GitHub - Why Version Control Matters
 
 ## 🎯 Key Concepts Learned
 
@@ -53,5 +51,76 @@
 - Git isn’t just about commands — it’s about **collaboration at scale**.
 - Distributed systems prevent downtime and empower developers to work independently.
 - GitHub transforms Git into a **teamwork hub**, making DevOps smoother.
+
+---
+
+# 📘 DevOps Learning Journey — Day 13 : Git Branching Strategy
+
+## 🎯 Why Branching Strategy Matters
+- Organizations aim to deliver **frequent, reliable releases** (every 15 days, monthly, or quarterly).
+- Branching strategy ensures:
+  - Customers get new features on time.
+  - Active development doesn’t break production.
+  - Teams can collaborate safely on large projects.
+
+## 🌱 What is a Branch?
+- A **branch** = separation of code for new features or fixes.
+- Example:  
+  - Calculator app (v1) → supports add, subtract, multiply, divide.  
+  - New feature: percentage or advanced functions.  
+  - Instead of changing `main` directly, create a branch (e.g., `feature/advanced-calculator`).  
+  - Develop & test independently, then merge back once stable.
+
+## 🧩 Types of Branches
+
+### 1. **Main/Master Branch**
+- Always up to date.
+- Contains the latest stable code.
+- Active development merges back here.
+
+### 2. **Feature Branches**
+- Created for new features or breaking changes.
+- Developers collaborate here until confident.
+- Example: Uber adds **bikes** → `feature/bikes`.
+- Once tested, merged back into `main`.
+
+### 3. **Release Branches**
+- Cut from `main` when preparing a release.
+- Frozen for testing and delivery.
+- Example: Kubernetes creates `release-1.27`.
+- Ensures no new changes disrupt testing.
+
+### 4. **Hotfix Branches**
+- Short‑lived branches for urgent production issues.
+- Example: Bug reported in `release-v3`.  
+  → Create `hotfix/critical-bug`, fix, merge into both `main` and `release`.
+
+## 🛠 Practical Examples
+
+### Kubernetes
+- 3300+ contributors.  
+- Uses **master + feature + release branches**.  
+- Example: `feature/rate-limiting`, `feature/workload-GA`.  
+- Releases every 3 months via `release-x.y`.
+
+### Uber Analogy
+- Started with **cabs**.  
+- Added **bikes** → `feature/bikes`.  
+- Later added **intercity travel** → `feature/intercity`.  
+- After testing, merged back into master.  
+- New version shipped via `release-v3`.
+
+## 📖 Interview‑Ready Points
+- **Q1:** From which branch do releases happen? → *Release branch*.  
+- **Q2:** What is a feature branch? → *Branch for new/breaking changes*.  
+- **Q3:** Which branch is always up to date? → *Main/Master*.  
+- **Q4:** How are hotfixes handled? → *Created quickly, merged into both master and release*.
+
+## 🧠 Key Takeaways
+- Branching strategy = balance between **innovation** and **stability**.  
+- Feature branches allow experimentation.  
+- Release branches ensure clean delivery.  
+- Hotfix branches protect production.  
+- Master branch must always stay current.
 
 ---
