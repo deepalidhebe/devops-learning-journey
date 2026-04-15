@@ -27,5 +27,3 @@ And GitHub? It took Git’s power and added collaboration - issues, reviews, pro
 Today, when I type git add, git commit, and git push, I’m not just running commands. I’m participating in a system that keeps innovation organized.
 
 Because DevOps isn’t just about automation - It’s about building together without breaking each other’s code.
-
-hashtag#GIT hashtag#GitHub hashtag#DevOps
