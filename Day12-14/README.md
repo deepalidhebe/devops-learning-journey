@@ -54,7 +54,7 @@
 
 ---
 
-# 📘 DevOps Learning Journey — Day 13 : Git Branching Strategy
+# 📘 DevOps Learning Journey - Day 13 : Git Branching Strategy
 
 ## 🎯 Why Branching Strategy Matters
 - Organizations aim to deliver **frequent, reliable releases** (every 15 days, monthly, or quarterly).
@@ -124,3 +124,68 @@
 - Master branch must always stay current.
 
 ---
+
+# 📘 DevOps Learning Journey - Day 14 : Advanced Git Workflow - Branches, Remotes, Clone vs Fork
+
+## 🎯 Key Concepts Learned
+
+### 1. Git Workflow (Daily Use)
+- `git add` → Stage changes for tracking.
+- `git commit -m "message"` → Save a snapshot with history.
+- `git push` → Send changes to remote repository.
+
+Standard workflow:
+```bash
+git add .
+git commit -m "message"
+git push
+```
+
+### 2. Local vs Remote Repositories
+- **Local repo** created with `git init` → generates `.git` folder for tracking.
+- **Remote repo** → GitHub, GitLab, Bitbucket, or self-hosted Git.
+- Connect local → remote:
+```bash
+git remote add origin <repo-url>
+git push -u origin main
+```
+- Without a remote, `git push` does nothing.
+
+### 3. Cloning
+- `git clone <repo-url>` → Download an existing repository to local.
+- Authentication methods:
+  - **HTTPS** → requires GitHub password.
+  - **SSH** → uses public/private key pair.
+    - Generate with: `ssh-keygen -t rsa`
+    - Add public key (`id_rsa.pub`) to GitHub → Settings → SSH Keys.
+
+### 4. Forking
+- **Clone** = download a repo to your local machine.  
+- **Fork** = create a copy of the repo under your own GitHub account.  
+- Fork is independent of the original repo until you sync it.  
+- Example: ArgoCD project has thousands of forks — each developer maintains their own copy.
+
+### 5. Branching Recap
+- By default, repos have one branch: `main`.
+- New branches are created for **features** or **large changes**:
+```bash
+git checkout -b feature/new-feature
+```
+- Prevents breaking production code while experimenting.
+- Example: Amazon adding a **carpenter services feature** → developed in a separate branch until stable.
+
+## 🧩 Interview-Ready Points
+- **Q1:** What is the Git workflow? → `git add`, `git commit`, `git push`.  
+- **Q2:** Difference between clone vs fork? → Clone = download, Fork = independent copy.  
+- **Q3:** How to connect local repo to remote? → `git remote add origin <url>`.  
+- **Q4:** Why use branches? → To isolate new features or breaking changes without affecting `main`.
+
+## 🧠 Key Takeaways
+- Git workflow ensures **version control + collaboration**.  
+- Remotes connect local work to shared repos.  
+- Clone vs Fork is a common interview question — know the difference.  
+- Branching strategy is essential for scaling features without breaking production.
+
+## 🔖 Hashtags
+`#DevOpsJourney` `#GitWorkflow` `#CloneVsFork` `#BranchingStrategy` `#ZeroToHero` `#LearningByDoing`
+
