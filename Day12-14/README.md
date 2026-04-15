@@ -186,6 +186,4 @@ git checkout -b feature/new-feature
 - Clone vs Fork is a common interview question — know the difference.  
 - Branching strategy is essential for scaling features without breaking production.
 
-## 🔖 Hashtags
-`#DevOpsJourney` `#GitWorkflow` `#CloneVsFork` `#BranchingStrategy` `#ZeroToHero` `#LearningByDoing`
-
+---
