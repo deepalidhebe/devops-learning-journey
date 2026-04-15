@@ -1,0 +1,41 @@
+# How to create or initialize a git repository
+	git init
+
+# To track the files
+	git add <filename>
+	git add calculator.sh
+	git add .
+
+# How to commit the changes done
+	git commit -m "your message"
+
+# How to see the logs
+	git log
+	git log --oneline
+
+# How to see the differences in versions
+	git diff
+
+# How to pull the code from GitHub repo
+	git clone <copy and paste your repo url>
+	git clone https://github.com/user_test/test.git
+
+# How to push the changes
+	git push origin <branch name>
+	git push origin main
+
+# How to check remote connection
+	git remote -v
+
+# How to configure remote connection
+	git remote add "repo_url"
+	git remote add "https://github.com/user_test/test.git"
+
+# How see the branch
+	git branch   --creates a blank branch
+	
+# How to create and switch the branches
+	git checkout -b <new_branch_name>
+	git checkout -b test  --creating test branch
+
+	git checkout -b main ---switch back to master branch
