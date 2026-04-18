@@ -48,7 +48,7 @@ The goal was to understand how compute, networking, and security come together t
 Running an app on EC2 ≠ making it accessible.  
 Networking and security (via **Security Groups**) are critical to exposing applications safely to the internet.
 
-!(NodeJS Application)[NodeJS_AppDeployed.png]
+![NodeJS Application](NodeJS_AppDeployed.png)
 
 ## 🙌 Acknowledgements
 Special thanks to **Abhishek Veeramalla** and **Kunal Verma** for their guidance and beginner‑friendly approach to cloud deployments.
