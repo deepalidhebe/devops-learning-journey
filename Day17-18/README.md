@@ -62,7 +62,87 @@ Abhishek explained with examples:
 
 ---
 
-## 🙌 Acknowledgements
-Thanks to **Abhishek Veeramalla’s DevOps 90‑Day Challenge** for clear explanations and practical examples.
+# 🚀 Day 18 – Ansible ZERO to HERO
 
+🖥️ What We Did
+Today we played with **Ansible**, a tool that helps us control many computers at once without typing commands on each one.
+
+Think of it like a **remote control** for servers:
+- Instead of pressing buttons on 100 TVs one by one,
+- You press one button, and *all TVs change channel together*.
+
+That’s what Ansible does for servers.
+
+---
+
+## 🚀 Step 1: Install Ansible
+On our Linux machine (Ubuntu EC2 instance):
+```bash
+sudo apt update
+sudo apt install ansible
+```
+This makes Ansible ready to use.
+
+## 🔑 Step 2: Passwordless Login
+We set up **passwordless authentication** so Ansible can talk to other servers without asking for a password every time.
+
+How?
+- Create a **key** (like a secret handshake).
+- Share the **public key** with the target server.
+- Now Ansible can connect freely.
+
+## ⚡ Step 3: Ad‑Hoc Commands
+Ad‑Hoc = **Quick one‑time commands**.
+
+Example:
+```bash
+ansible -i inventory all -m shell -a "touch devops_class"
+```
+This created a file called `devops_class` on the target server.  
+It’s like saying: *“Hey, all servers, make this file right now!”*
+
+## 📒 Step 4: Playbooks
+Playbooks = **Reusable scripts** written in YAML.  
+They are like a recipe card: step‑by‑step instructions.
+
+Example Playbook:
+```yaml
+---
+- name: Install and restart NGINX
+  hosts: all
+  become: true
+  become_user: root
+
+  tasks:
+    - name: Install nginx
+      apt:
+        name: nginx
+        state: present
+    - name: Start nginx
+      service:
+        name: nginx
+        state: started
+```
+
+This tells Ansible:
+1. Install NGINX web server.
+2. Start NGINX service.
+
+## 🎯 Key Difference
+- **Ad‑Hoc Commands** → Quick, one‑time tasks (like turning on a light).  
+- **Playbooks** → Organized, repeatable tasks (like following a recipe).
+
+## 🌟 Takeaway
+Ansible makes life easy:
+- One control for many servers.
+- No need to repeat commands.
+- Perfect for automation.
+
+---
+
+## 📌 References
+- Abhishek Veeramalla’s DevOps series ([YouTube](https://www.youtube.com/playlist?list=PLdpzxOOAlwvIc1TjTwopNSjRJkzES2ZXk))
+  
+---
+Thanks to Abhishek Veeramalla’s DevOps 90‑Day Challenge for clear explanations and practical examples.
 ---
