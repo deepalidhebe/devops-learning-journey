@@ -9,7 +9,7 @@
 - **Jira**  
   - Tool to implement Agile project management.  
   - Tracks epics, stories, bugs, and team velocity.  
-  - Free trial available via Atlassian — easy to practice at home.
+  - Free trial available via Atlassian - easy to practice at home.
 
 - **Confluence & SharePoint**  
   - Knowledge‑sharing platforms for internal documentation.  
@@ -29,7 +29,8 @@
   - Supports ticket lifecycle: To‑Do → In Progress → Review → Done.
 
 ### 🧩 Why This Matters
-DevOps engineers aren’t just about CI/CD pipelines — they must also **navigate organizational workflows**. Knowing these tools ensures you can:  
+DevOps engineers aren’t just about CI/CD pipelines, they must also **navigate organizational workflows**. 
+Knowing these tools ensures you can:  
 - Communicate effectively with teams.  
 - Track and document progress.  
 - Handle incidents and changes professionally.  
