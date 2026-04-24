@@ -1,4 +1,4 @@
-# 📌 Day 21 - Project Management Tools for DevOps Eng
+# 📌 Day 21 - Project Management Tools for DevOps Engineers
 
 ### 🔑 Key Takeaways
 - **Agile Methodology**  
