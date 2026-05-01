@@ -57,3 +57,7 @@ docker run
 - As a DevOps engineer, you don’t need to be a Django developer, but you must understand the **workflow** to containerize apps.  
 - ENTRYPOINT vs CMD is a common interview question — ENTRYPOINT is fixed, CMD is flexible.  
 - Port mapping (`-p`) is essential to access containerized web apps externally.
+
+ ## Django App Screenshot
+
+![Django App Screenshot](Images/django_app.png)
