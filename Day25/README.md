@@ -49,6 +49,8 @@ Make sure you have installed:
 ```bash
 go run calculator.go
 ````
+<img width="985" height="529" alt="image" src="https://github.com/user-attachments/assets/f0daed5b-4c0f-4fa9-a0f1-af25692a96bc" />
+
 
 ### 🔹 Build Image
 ```bash
@@ -65,6 +67,8 @@ docker run -it simple-calculator
 
 *   Image size: \~800MB+
 *   Contains unnecessary OS packages and build dependencies
+
+<img width="1055" height="90" alt="image" src="https://github.com/user-attachments/assets/2c69994f-bfa7-434d-9e59-c5271c10fd6f" />
 
 ---
 
@@ -87,6 +91,8 @@ docker run -it simple-calculator-multistage
 *   Image size: \~2MB
 *   Only contains compiled binary
 *   No extra tools or OS dependencies
+
+<img width="827" height="112" alt="image" src="https://github.com/user-attachments/assets/a93799f0-b2e5-4908-a191-0262e4dc765f" />
 
 ---
 
