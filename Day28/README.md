@@ -56,7 +56,24 @@ These questions help you understand how to **talk about Docker confidently** in 
   ENTRYPOINT ["python", "app.py"]
   CMD ["--port", "8000"]
   ```
-
+- CMD → Defines a default command that can be overridden when you run the container.
+Example:
+  ```dockerfile
+  CMD ["python", "app.py"]
+  ```
+You can override it with:
+  ``` bash
+  docker run myimage echo "Hello"
+  ```
+- ENTRYPOINT → Defines a fixed executable that always runs when the container starts.
+Example:
+  ```dockerfile
+  ENTRYPOINT ["python", "app.py"]
+  ```
+You can pass arguments like:
+  ```bash
+  docker run myimage "Hello"
+  ```
 ---
 
 ### 7️⃣ Docker Networking Types
