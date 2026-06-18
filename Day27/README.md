@@ -6,6 +6,8 @@
 - Sometimes you want them to **stay separate** (like login vs finance apps).
 
 ## 🔑 Types of Docker Networks
+
+![Docker Networks](Type_of_networks.png)
 1. **Bridge (Default)**  
    - Created automatically (`docker0`).  
    - Containers can ping each other and reach the host.  
