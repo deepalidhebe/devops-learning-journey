@@ -62,6 +62,8 @@ http://<EC2-Public-IP>:8080
 ```
 Example: `http://3.108.289.178:8080`
 
+<img width="712" height="233" alt="image" src="https://github.com/user-attachments/assets/c1a93303-2b25-40aa-afad-d71d76a846b0" />
+
 ---
 
 ## 📊 Architecture Flow
