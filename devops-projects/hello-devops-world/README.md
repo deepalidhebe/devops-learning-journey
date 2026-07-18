@@ -1,5 +1,7 @@
 # 🚀 Hello DevOps World on AWS EC2
 
+<img width="132" height="32" alt="image" src="https://github.com/user-attachments/assets/88740c34-5164-46a9-8a92-7212ec9cf31e" />
+
 This project demonstrates how to deploy a simple **Flask web application** using **Docker** on an **AWS EC2 instance**.  
 It’s a beginner‑friendly DevOps project that shows the complete journey:  
 **Code → Container → Docker Hub → EC2 → Browser.**
